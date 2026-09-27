@@ -1,0 +1,45 @@
+{
+  "Departments": {
+    "description": "Company departments.",
+    "columns": {
+      "Location": "Office city where the department is based.",
+      "Budget": "Annual budget in USD."
+    }
+  },
+  "Employees": {
+    "description": "Company staff, including sales representatives.",
+    "columns": {
+      "HireDate": "Date the employee was hired, ISO text 'YYYY-MM-DD'.",
+      "Salary": "Annual salary in USD.",
+      "ManagerID": "The employee's manager (self-reference to Employees.EmployeeID); NULL for top-level leaders."
+    }
+  },
+  "Customers": {
+    "description": "Customers who place orders.",
+    "columns": {
+      "State": "Two-letter US state code, e.g. 'CA' for California, 'NY' for New York.",
+      "CreatedAt": "Date the customer account was created, ISO text 'YYYY-MM-DD'."
+    }
+  },
+  "Products": {
+    "description": "Products available for sale.",
+    "columns": {
+      "UnitPrice": "Current list price in USD.",
+      "StockQuantity": "Units currently in stock."
+    }
+  },
+  "Orders": {
+    "description": "Customer orders. EmployeeID is the sales rep who handled the order.",
+    "columns": {
+      "OrderDate": "Date the order was placed, ISO text 'YYYY-MM-DD'.",
+      "Status": "Order lifecycle status.",
+      "TotalAmount": "Order total in USD (sum of its OrderItems)."
+    }
+  },
+  "OrderItems": {
+    "description": "Line items of an order.",
+    "columns": {
+      "UnitPrice": "Price per unit at the time of the order, in USD."
+    }
+  }
+}

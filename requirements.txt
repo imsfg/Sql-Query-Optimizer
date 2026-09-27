@@ -1,0 +1,13 @@
+anthropic>=1.8,<2
+google-genai>=2.25,<3
+langgraph>=1.2,<2
+langgraph-checkpoint-sqlite>=3.1,<4
+fastapi>=0.141
+uvicorn[standard]>=0.54
+sqlglot>=30.20,<31
+pydantic>=2.13,<3
+python-dotenv>=1.2
+
+# tests
+pytest>=9
+httpx>=0.28
